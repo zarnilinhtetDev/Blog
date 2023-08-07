@@ -28,7 +28,12 @@
     @auth
         <x-commentform :secondblog="$secondblog" />
     @else
-        <p class="text-center">Please <a href="/login">Login</a> to participate in this discussion</p>
+        <p class="text-center text-danger " style="font-size: 20px">Please <a href="/login" class="text-danger">Login</a>
+            to participate in this
+            discussion
+        </p>
+
+
     @endauth
 
     @if ($secondblog->comments->count())
